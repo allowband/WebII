@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"  >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollview">
+        <LinearLayout
+            android:id="@+id/formLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:textSize="80px"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Log in" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textSize="60px" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:hint="Last Name"
+                android:textSize="60px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/editText1"
+                android:hint="Username"
+                android:textSize="60px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/editText2"
+                android:hint="Password"
+                android:textSize="60px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:spinnerMode="dropdown"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="horizontal">
+        <Button android:text="Sign up"
+            android:id="@+id/Button01"
+            android:layout_width="280px"
+            android:textSize="40px"
+            android:layout_height="120px"/>
+
+        <Button android:text="Register"
+            android:id="@+id/Button02"
+            android:layout_width="280px"
+            android:layout_height="120px"
+            android:textSize="40px"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
